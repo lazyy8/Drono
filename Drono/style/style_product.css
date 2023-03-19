@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Robotobold.ttf");
+    font-weight: bold;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth; 
+}
+
+a {
+color: white;
+text-decoration: none;
+}
+
+.header {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px 0;
+    position: sticky;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    vertical-align: bottom;
+    height: 70px;
+    width: 99px;
+}
+
+.menu {
+    margin-left: 244px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 115px;
+}
+
+.menu-item a {
+    font-size: 15px;
+    color: #030305;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    border-bottom: 2px solid black;
+}
+
+.button {
+    padding: 20px;
+    width: 334px;
+    height: 64px;
+    background: #030305;
+    border: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: background-color .5s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #575757;
+}
+
+.car {
+    padding: 100px 0;
+
+}
+
+.sub-title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    color: #030305;
+    margin-bottom: 15px;
+}
+
+.car-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.car-item {
+    max-width: 384px;
+    text-align: center;
+    margin-bottom: 240px;
+    margin-left: 800px; 
+    
+}
+
+.car-items-image img {
+    vertical-align: bottom;
+    height: 620px;
+    width: 800px;
+    transition: .5s;
+    margin-left: -1550px;
+}
+
+.car-items-image img:hover {
+    transform: scale(1.05);
+}
+
+.car-item-title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #030305;
+    padding: 15px 0 17px 0;
+    margin-top: -550px;
+}
+
+.car-item-info {
+    border: #000 1px solid;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-item-point {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.car-item-point img {
+    margin-bottom: 8px;
+    height: 32px;
+    width: 40px;
+}
+
+.comp {
+font-size: 26px;
+margin-top: 250px;
+margin-left: -750px;
+}
+
+.car-item-action .button {
+    width: 100%;
+    padding: 15px;
+    height: 54px;
+}
+
+.car-item-point > div:nth-child(2) {
+    font-weight: bold;
+}
+
+.price {
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.price .container {
+    position: relative;
+    padding-bottom: 121px;
+}
+
+.price .sub-title {
+    margin-bottom: 20px;
+}
+
+.price-input {
+    padding: 22px 18px;
+    width: 344px;
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid #5D5D5F;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #000000;
+}
+
+.price-input::placeholder {
+    color: #5D5D5F;
+}
+
+.price .button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.price-image {
+    position: absolute;
+    bottom: 0;
+    left: 401px;
+    
+} 
+
+.price-text {
+margin-top: 50px;
+}
+
+.footer {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rights {
+    font-size: 15px;
+    text-align: right;
+    color: #030305;
+}
+
+.mouse-parallax {
+margin-left: 1200px;
+margin-top: -550px;    
+}
+
+.mouse-parallax img{
+height: 500px;
+width: 600px;
+border-radius: 175px;
+}
+
+.filter {
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+      left   var(--_i,0%) top    var(--_g),
+      bottom var(--_i,0%) left   var(--_g),
+      top    var(--_i,0%) right  var(--_g),
+      right  var(--_i,0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    filter: grayscale();
+    transition: .3s linear;
+    height: 600px;
+    width: 900px;
+    margin-top: 50px;
+    
+  }
+  .filter:hover {
+    --_i: 10%;
+    filter: grayscale(0);
+  }
+  
+  .contacts-text {
+    font-size: 18px;
+    padding-top: 20px;
+    
+
+  }
